@@ -2,8 +2,8 @@
 Python - Pytest - Requests
 
 ## Commands to run:
-
-to activate virtual env : `source venv/bin/activate;  `
+Create virtual env: either using Pycharm setup option or `python3 -m venv venv`
+To activate virtual env : `source venv/bin/activate;  `
 
 1. `pytest`
 
@@ -18,7 +18,7 @@ to activate virtual env : `source venv/bin/activate;  `
 
    run tests by passing env variable and also setting a pytest option 'user-id' as a fixture to be used in test methods directly(processed in conftest.py)
 
-## Steps followed to create this framework from scratch:
+## Steps followed to create this framework from scratch[self-notes]:
 
 1. create repo on GitHub
 2. clone on local
