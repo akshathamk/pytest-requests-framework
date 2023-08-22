@@ -2,6 +2,7 @@
 Python - Pytest - Requests
 
 ## Commands to run:
+
 Create virtual env: either using Pycharm setup option or `python3 -m venv venv`
 
 To activate virtual env : `source venv/bin/activate;  `
