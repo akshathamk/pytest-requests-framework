@@ -26,4 +26,21 @@ Steps followed to create this framework from scratch:
 
     pip freeze > requirements.txt
    (will copy all libraries to requirements.txt)
-10. 
+
+
+Commands to run:
+
+to activate virtual env : `source venv/bin/activate;  `
+
+1. `pytest`
+
+   will run all tests under test folder
+2. `pytest -s`
+   
+   will run tests with  --capture=no , hence will display all print statements in console
+3. `ENV=TEST pytest -s`
+
+   set an environment variable ENV to be read by config.py to filter data from properties.ini file based on sections
+4. `ENV=TEST pytest -s --user_id=2`
+
+   run tests by passing env variable and also setting a pytest option 'user-id' as a fixture to be used in test methods directly(processed in conftest.py)

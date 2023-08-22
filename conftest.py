@@ -7,6 +7,7 @@ def pytest_addoption(parser):
     :return:
     """
     parser.addoption("--sample_value", action="store", default="DEFAULT",help="Please enter sample value")
+    parser.addoption("--user_id", action="store", default="2",help="Please enter user ID value")
 
 @pytest.fixture(scope="session")
 def sample_value(request):
@@ -16,3 +17,7 @@ def sample_value(request):
     :return:
     """
     return request.config.getoption("--sample_value")
+
+@pytest.fixture(scope="session")
+def user_id(request):
+    return request.config.getoption("--user_id")
