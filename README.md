@@ -1,7 +1,7 @@
 # pytest-requests-framework
 Python - Pytest - Requests
 
-##Steps followed to create this framework from scratch:
+## Steps followed to create this framework from scratch:
 
 1. create repo on GitHub
 2. clone on local
@@ -28,7 +28,7 @@ Python - Pytest - Requests
    (will copy all libraries to requirements.txt)
 
 
-##Commands to run:
+## Commands to run:
 
 to activate virtual env : `source venv/bin/activate;  `
 
