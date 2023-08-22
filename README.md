@@ -20,6 +20,18 @@ To activate virtual env : `source venv/bin/activate;  `
 
    run tests by passing env variable and also setting a pytest option 'user-id' as a fixture to be used in test methods directly(processed in conftest.py)
 
+## Details:
+* All tests are to be under test folder with filename and test method name starting with 'test' for pytest to recognize
+* setup and teardown methods also should start with same text
+* Any values/constants can be stored in properties.ini section-wise. Here I have sectioned it on env names with a DEFAULT as fall-back section
+* These values are read by config.py and can be used anywhere in the framework by importing the same
+* To add fixtures to pytest so that different values are available for test metods, add a fixture in conftest.py or in the same test class. We can even read a value from command line and use it as a fixture Eg: user_id. Read more about fixtures on https://docs.pytest.org/en/7.1.x/how-to/fixtures.html
+* To add cstom markers to group tests, use pytest.ini
+* requirements.txt will contain all required libraries and their dependencies
+* Add files not to be stored remotely in .gitignore
+* Makefile can give us a handy command to run multiple commands in an order , also helping read values from command line - TO BE ADDED
+* src>utils>rest_client acts as a wrapper on requests library of Python
+
 ## Steps followed to create this framework from scratch[self-notes]:
 
 1. create repo on GitHub
