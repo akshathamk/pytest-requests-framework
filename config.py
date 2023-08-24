@@ -1,5 +1,7 @@
 import configparser
 import os
+import allure
+
 
 def get_env():
     """
@@ -7,6 +9,7 @@ def get_env():
     :return: env
     """
     return os.environ['ENV']
+
 
 def get_config(env):
     """
@@ -18,3 +21,8 @@ def get_config(env):
     configure = configparser.ConfigParser()
     configure.read('properties.ini')
     return configure[env]
+
+
+def allure_logs(text):
+    with allure.step(text):
+        pass

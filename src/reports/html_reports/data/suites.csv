@@ -1,0 +1,14 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Aug 24 15:07:15 IST 2023","Thu Aug 24 15:07:15 IST 2023","80","src.test","test_sample","TestSample","","","test_get_user","
+        GET user details by reading user_id via fixtures in conftest.py passed along with pytest command in console
+        :param user_id:
+        :return:
+        "
+"passed","Thu Aug 24 15:07:14 IST 2023","Thu Aug 24 15:07:14 IST 2023","62","src.test","test_sample","TestSample","","","test_get","
+        GET all users
+        :return:
+        "
+"passed","Thu Aug 24 15:07:14 IST 2023","Thu Aug 24 15:07:14 IST 2023","426","src.test","test_sample","TestSample","","","test_post","
+        POST create a new user and get newly generated user id in response
+        :return:
+        "

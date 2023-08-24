@@ -1,5 +1,6 @@
 import pytest
 from src.utils.rest_client import RestClient
+from config import allure_logs
 
 
 class TestSample:
@@ -14,6 +15,7 @@ class TestSample:
         GET all users
         :return:
         """
+        allure_logs("Testing the GET users endpoint")
         path = 'users'
         response = self.rest_client.get(path)
         assert response.status_code == 200

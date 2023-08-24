@@ -19,6 +19,15 @@ To activate virtual env : `source venv/bin/activate;  `
 4. `ENV=TEST pytest -s --user_id=2`
 
    run tests by passing env variable and also setting a pytest option 'user-id' as a fixture to be used in test methods directly(processed in conftest.py)
+5. `ENV=TEST pytest --alluredir=src/reports/allure_json -s`
+
+   run tests and generate allure reports related JSON files in the path provided(replace path as required)
+6. `allure serve src/reports/allure_json`
+
+   to generate allure reports from the JSON files in HTML format that opens in default browser(replace path as required)
+7. ` allure generate src/reports/allure_json --clean -o src/reports/html_reports`
+
+   to generate allure reports in HTML and store them in provided path(replace path as required)
 
 ## Details:
 * All tests are to be under test folder with filename and test method name starting with 'test' for pytest to recognize
@@ -31,6 +40,8 @@ To activate virtual env : `source venv/bin/activate;  `
 * Add files not to be stored remotely in .gitignore
 * Makefile can give us a handy command to run multiple commands in an order , also helping read values from command line - TO BE ADDED
 * src>utils>rest_client acts as a wrapper on requests library of Python
+* allure reporting has been integrated and the commnads required to generate and store reports are mentioned here
+* We can also add custom logging for allure reports and same is also covered
 
 ## Steps followed to create this framework from scratch[self-notes]:
 
@@ -57,6 +68,9 @@ To activate virtual env : `source venv/bin/activate;  `
 
     pip freeze > requirements.txt
    (will copy all libraries to requirements.txt)
+10. We can use the same steps to add more libraries as and when required
+11. For allure command to be recognised:
+   `npm install -g allure-commandline --save-dev`
 
 
 
