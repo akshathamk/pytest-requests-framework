@@ -1,5 +1,6 @@
 # pytest-requests-framework
 Python - Pytest - Requests
+
 Sample Python framework for API testing using Requests library and Pytest
 
 ## Commands to run:
